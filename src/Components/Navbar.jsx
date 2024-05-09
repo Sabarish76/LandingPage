@@ -1,4 +1,5 @@
 import { Sling as Hamburger } from "hamburger-react";
+import Logo from "../assets/logo.png";
 import { useState } from "react";
 import "../index.css";
 
@@ -12,9 +13,10 @@ const Navbar = () => {
 
   return (
     <div className="grid grid-cols-3">
-      <div className="flex mt-4 mx-16">
-        <p className="font-bold">legal</p>
-        <p className="font-bold text-red-400">justice</p>
+      <div className="flex mt-4 mx-2 lg:mx-16">
+        <img src={Logo} alt="logo" className="h-14 " />
+        {/* <p className="font-bold">legal</p>
+        <p className="font-bold text-red-400">justice</p> */}
       </div>
 
       <div className="relative flex items-center justify-center ">
@@ -29,17 +31,17 @@ const Navbar = () => {
             mobile ? "block" : "hidden"
           } sm:flex flex-col gap-10 sm:flex-row sm:items-center justify-evenly leading-8 sm:mt-2 relative top-10 sm:top-1`}
         >
-          <p>AboutUs</p>
-          <p>Team</p>
-          <p>Services</p>
-          <p>News</p>
-          <p>ContactUs</p>
+          <p>Product</p>
+          <p>Resources</p>
+          <p>Demo</p>
+          <p>Pricing</p>
+          <p>FreeTrail</p>
         </div>
       </div>
 
       <div className="hidden sm:flex justify-end items-center mr-10">
-        <button className="text-white bg-gray-800 hover:bg-gray-900 font-medium text-sm px-5 py-1.5 mt-4 mr-5">
-          Free Consultation
+        <button className="text-white bg-gray-800 hover:bg-gray-900 font-medium text-sm px-10 py-2.5 mt-4 mr-5">
+          Login
         </button>
       </div>
     </div>

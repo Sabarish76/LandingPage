@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="my-10 relative grid grid-cols-1 md:grid-cols-3 md:items-center">
+    <div className="my-10 mt-20 md:mt-0 relative grid grid-cols-1 md:grid-cols-3 md:items-center">
       <div className="col-span-1 md:text-right md:ml-40">
         <p className="font-bold text-red-400 text-2xl ">Why Choose Us</p>
         <p className="font-bold text-3xl">
